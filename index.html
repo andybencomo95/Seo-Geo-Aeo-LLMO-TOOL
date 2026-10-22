@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Visibilidad web: SEO, GEO, AEO y LLMO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+<h1>Qué aplicar para que tu web reciba más tráfico</h1>
+<p class="lead">Escribe la URL de tu web y obtén un plan priorizado de SEO, GEO, AEO y LLMO, con el código listo para copiar.</p>
+
+<form id="f">
+  <input type="text" id="url" placeholder="https://tuweb.com/pagina" aria-label="URL de la web" autocomplete="url" inputmode="url">
+  <button class="go" type="submit">Analizar</button>
+</form>
+<details class="src">
+  <summary>Análisis real: pega el HTML de tu página</summary>
+  <p>Por seguridad, el navegador no deja leer otras webs desde aquí. Abre tu página, pulsa Ctrl+U (o clic derecho, Ver código fuente), copia todo y pégalo abajo. El análisis se hace en tu navegador y no se envía a ningún sitio.</p>
+  <textarea id="html" placeholder="<html>…</html>" aria-label="HTML de la página"></textarea>
+</details>
+<div class="drop" id="drop">
+  <label for="files"><b>Sube tus archivos clave</b><span>HTML de la página, robots.txt, llms.txt, sitemap.xml o JSON-LD (.json). Arrástralos aquí o elígelos. Se leen en tu navegador y no se envían a ningún sitio.</span></label>
+  <input type="file" id="files" multiple accept=".html,.htm,.txt,.xml,.json,.jsonld">
+  <ul id="flist"></ul>
+</div>
+<p class="err" id="err" role="alert"></p>
+
+<section id="res" hidden>
+  <div class="note" id="mode"></div>
+  <h2>Tu cobertura por disciplina</h2>
+  <div id="lanes"></div>
+  <h2>Haz esto primero</h2>
+  <ul class="pri" id="pri"></ul>
+  <h2>Todas las comprobaciones</h2>
+  <div id="list"></div>
+  <h2>Código listo para copiar</h2>
+  <div class="tabs" role="tablist" id="tabs"></div>
+  <div class="code"><button class="copy" id="copy" type="button">Copiar</button><pre id="code" tabindex="0"></pre></div>
+</section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
